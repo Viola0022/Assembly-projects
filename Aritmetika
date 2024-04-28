@@ -1,0 +1,28 @@
+;  Aritmetika
+;  počítá příklad: R20 = (4 * R16 + 3 * R17 - R18) / 8
+
+.include "m169def.inc"
+.cseg
+.org 0
+jmp start
+
+.org 0x300
+start:
+
+LDI R16, 5
+LDI R17, 10
+LDI R18, 58
+
+;R20 = (4 * R16 + 3 * R17 - R18) / 8
+
+lsl r16 ;násobek dvěma
+lsl r16 ;násobek dvěma
+
+mov r20, r17
+lsl r17
+add r20, r17
+
+add r20, r16
+sub r20, r18
+
+konec: jmp konec
