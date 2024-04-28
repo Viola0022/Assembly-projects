@@ -1,0 +1,69 @@
+;  Hexa
+; Na displeji zobrazí osmibitové číslo v šestnáctkové soustavě
+
+;definice pro nas typ procesoru
+.include "m169def.inc"
+
+;budu používat paměť programu (tyto věci tu nemusí nyní být)
+.cseg
+
+;říkám mu, kde začnu (adresa)
+.org 0x100
+
+;definice naseho typu procesoru
+.include "m169def.inc"
+
+.org 0
+jmp start
+
+.org 0x300
+start:
+
+;inicializace (založení) zásobníku
+ldi r16, 0xFF
+;stack pointer low
+out SPL, r16
+ldi r16, 0x04
+;stack pointer high
+out SPH, r16
+;založený, nyní ho mohu používat
+
+;nastavení hodnoty
+ldi r16, 0
+
+cyklus:
+push r16
+inc r16
+
+;zde se ptám, zda hodnota, kterou jsem nastavila už dosáhla nějaké meze, nebo ještě ne
+; branch if not equal
+;a všechno pushnu na zásobník
+brne cyklus
+
+
+
+;začátek programu (doteď nic nenaprogrmaoval)
+
+; ldi načítá do registru konstantu (do registru r16 dám 10)
+ldi r16, 10
+ldi r17, 20
+
+add r16, r17 ; sečteme dvě čísla (registry) a výsledek bude v r16
+
+;vyčistit registry
+clr r16 ;clear
+clr r17
+
+;nyní by tam měla být 0 a 0
+
+inc r16 ;incrementovat r16
+dec r17 ;dekrementace r17
+
+ldi r16, 0xAA ;v hexa
+ldi r17, 0b00001111 ;binár
+ldi r18, 'A' ;ASCII
+ldi r19, 10 ;deci
+ldi r20, -1
+
+;nyní by tam měla být -1
+konec: jmp konec ;ukončení programu
