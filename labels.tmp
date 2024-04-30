@@ -1,0 +1,45 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.9</VERSION>
+ <DEVICE>ATmega169</DEVICE>
+ <WORKING_DIR>C:\SAP-avr\lab3-jezdici</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m169def.inc</FILE>
+  <FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE>
+  <FILE>C:\SAP-avr\lab3-jezdici\znaky.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init_disp><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>3</LINE></init_disp>
+  <show_char><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>18</LINE></show_char>
+  <mezera><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>42</LINE></mezera>
+  <neznak><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>39</LINE></neznak>
+  <nemezera><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>44</LINE></nemezera>
+  <znaky><FILE>C:\SAP-avr\lab3-jezdici\znaky.inc</FILE><LINE>8</LINE></znaky>
+  <zobzc><FILE>C:\SAP-avr\lab3-jezdici\print.inc</FILE><LINE>64</LINE></zobzc>
+  <start><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>17</LINE></start>
+  <delka><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>13</LINE></delka>
+  <retez><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>14</LINE></retez>
+  <zacatek><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>25</LINE></zacatek>
+  <clearRegs><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>124</LINE></clearRegs>
+  <cteni><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>30</LINE></cteni>
+  <konecTextu><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>47</LINE></konecTextu>
+  <printAllChars><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>94</LINE></printAllChars>
+  <incAllPositions><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>133</LINE></incAllPositions>
+  <wait><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>75</LINE></wait>
+  <end><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>72</LINE></end>
+  <cyklus><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>79</LINE></cyklus>
+  <cyklus1><FILE>C:\SAP-avr\lab3-jezdici\Jezdiic-text.asm</FILE><LINE>82</LINE></cyklus1>
+ </LABELS>
+</ASSEMBLER_INFO>
